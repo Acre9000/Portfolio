@@ -6,7 +6,7 @@
     <title>The Test Website</title>
     <style>
         :root {
-            --margin-Base: 100px; /* Set your default margin value here */
+            --margin-Base: 50px; /* Set your default margin value here */
         }
 
         body {
@@ -19,14 +19,14 @@
         }
 
         #title {
-            font-size: 5em;
+            font-size: 4em;
             text-align: center;
-            margin-top: 50px;
+            margin: 20px 20px;  
         }
 
         #subtitle {
-            font-size: 2em;
-            text-align: left;
+            font-size: 3em;
+            text-align: center;
             margin: var(--margin-Base);
         }
 
@@ -63,24 +63,12 @@
     </style>
 </head>
 <body>
-    <div id="title">The Test</div>
-    <div id="subtitle">The subtest</div>
-    <p id="introduction">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Proin euismod justo nec mauris feugiat, sit amet feugiat arcu tincidunt.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod 
-        justo nec mauris feugiat, sit amet feugiat arcu tincidunt.Lorem ipsum dolor
-         sit amet, consectetur adipiscing elit. Proin euismod justo nec mauris feugiat,
-          sit amet feugiat arcu tincidunt.Lorem ipsum dolor sit amet, consectetur
-           adipiscing elit. Proin euismod justo nec mauris feugiat, sit amet feugiat
-            arcu tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-             Proin euismod justo nec mauris feugiat, sit amet feugiat arcu tincidunt.
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod 
-             justo nec mauris feugiat, sit amet feugiat arcu tincidunt.Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit. Proin euismod justo nec
-               mauris feugiat, sit amet feugiat arcu tincidunt.</p>
+    <div id="title">Andrés Cabrero </div>
+    <div id="subtitle">Portfolio</div>
+    <p id="introduction">Hi! I am Andrés, an artist working with interaction, digital media, and games. I have a Bachelor in Fine Arts (University of Seville), and a Master in Visual Game and Media Design (Royal Danish Academy, Copenhagen). For the last 5 years I have been working as a teacher and freelance artist, I developed BORE DOME, and I made all kinds of small interactive experiments. I am constantly researching new things, solving problems, and realizing that ultimately, we should play more. I have a tendency for drifting (as I wrote this I ended up reading about japanese drifting competitions on wikipedia)</p>
 
                <!-- Link to CV -->
-               <a href="documents/CV_Andres.pdf" target="_blank" style="display: block; margin: 20px auto; text-align: center;">View my CV</a>    <div id="index">
+               <a href="Documents/CV_Andres.pdf" target="_blank" style="display: block; margin: 20px auto; text-align: center;">View my CV</a>    <div id="index">
         <h2>Index</h2>
         <ul>
             <li>Projects</li>
@@ -92,9 +80,9 @@
     <div id="Projects">
         <h2 style="text-align: Left; margin: 100px">Projects</h2>
         <div class="grid-container">
-            <div class="grid-item"><img src="Images/BD01.png" alt="Project 1" style="max-width: 100%; height: auto;"></div>
-            <div class="grid-item"><img src="Images/Traces.png" alt="Project 2" style="max-width: 100%; height: auto;"></div>
-            <div class="grid-item"><img src="Images/Still looking for fog.jpg" alt="Project 3" style="max-width: 100%; height: auto;"></div>
+            <div class="grid-item"><img src="Images/BD01.png" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;"></div>
+            <div class="grid-item"><img src="Images/Traces.png" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;"></div>
+            <div class="grid-item"><img src="Images/Still looking for fog.jpg" alt="Project 3" style="object-fit: cover; width: 100%; height: 100%;"></div>
             <!-- Add more grid items as needed -->
         </div>
     </div>
