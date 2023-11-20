@@ -1,0 +1,47 @@
+This is a note pad, where I will keep some notes for things:
+
+-Break points interesting for styling
+------------------
+/* Styles for desktop */
+/* For screens 992px and above */
+@media (min-width: 992px) {
+    /* Desktop styles */
+    /* ... */
+}
+
+/* Styles for tablets */
+/* For screens between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Tablet styles */
+    /* ... */
+}
+
+/* Styles for mobile */
+/* For screens below 768px */
+@media (max-width: 767px) {
+    /* Mobile styles */
+    /* ... */
+}
+-------------------
+-CSS based on percentages
+
+When working with responsive design, breakpoints aren't limited to pixels; you can utilize various units, including percentages, ems, rems, and viewport units (like vw and vh), to create responsive layouts based on relative sizes rather than fixed pixels.
+
+For instance, you can use percentages or viewport units as breakpoints in media queries:
+
+css
+
+/* Styles for screens wider than 768 pixels */
+@media (min-width: 768px) {
+    /* Styles here */
+}
+
+/* Styles for screens smaller than 50% of the viewport width */
+@media (max-width: 50%) {
+    /* Styles here */
+}
+
+/* Styles for screens wider than 60% of the viewport height */
+@media (min-height: 60vh) {
+    /* Styles here */
+}
