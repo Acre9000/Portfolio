@@ -52,6 +52,14 @@
             
         }
 
+        .grid-container2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2px;
+            margin: 30px 30px;
+            
+        }
+
         .grid-item {
             /*border: 3px solid #fff;*/
             padding: 30px;
@@ -78,14 +86,15 @@
         }
 
         .image-title {
-        position: absolute;
-        bottom: 10;
-        left: 0%;
+        position: relative;
+        
+        left: 10%;
+        bottom: 1%;
         transform: translateX(0%);
         background-color: rgba(0, 0, 0, 0.7); /* Add a background color for better readability */
-        color: #fff; /* Set the text color */
+        color: #a9a9a9; /* Set the text color */
         padding: 0px; /* Add some padding for better aesthetics */
-        text-align: center; /* Center the text within the title box */
+        text-align: left; /* Center the text within the title box */
         width: 100%; /* Make the title box span the entire width of the image */
         }
         
@@ -106,22 +115,24 @@
         
     <div id="projects">
     <h2 style="text-align: left; margin: var(--margin-Base);">Projects</h2>
+
+
     <div class="grid-container">
         <div class="grid-item">
-            <a href="https://www.jesperjuul.net/text/gameofobjects/"> <!-- Link to HTML file for Project 1 -->
+            <a href="#jesper"> <!-- Link to HTML file for Project 1 -->
                 <img src="Images/Juul/image(16).jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
             </a>
             <p class="image-title">The Game of Video Game Objects (Jesper Juul 2021)</p>
         </div>
         <div class="grid-item">
-            <a href="https://apps.apple.com/us/app/augment-x/id6447903574?platform=iphone"> <!-- Link to HTML file for Project 2 -->
+            <a href="#Esben"> <!-- Link to HTML file for Project 2 -->
                 <img src="Images/Esben/image(18).png" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
             </a>
             <p class="image-title">IOs build for Augment-X (Esben Holk 2022)</p>
         </div>
         <div class="grid-item">
-            <a href="Technical.html"> <!-- Link to HTML file for Project 3 -->
-                <img src="Images/VRexhibit/Exhibition Space FPS_4K_20.11.2023_02-22-30-min.jpg" alt="Project 3" style="object-fit: cover; width: 100%; height: 100%;">
+            <a href="#VR"> <!-- Link to HTML file for Project 3 -->
+                <img src="Images/VRexhibit/02.jpg" alt="Project 3" style="object-fit: cover; width: 100%; height: 100%;">
             </a>
             <p class="image-title">VR Exhibition (Det Kongelige Akademi 2022)</p>
         </div>
@@ -135,8 +146,117 @@
     </div>
 </div>
 
+<div id="jesper">
+<h2 style="text-align: left; margin: var(--margin-Base);">The Game of Video Game Objects</h2>
+
+<p id="introduction"> During a couple of months I helped academic Jesper Juul creating a level for his interactive research piece. I created assets, remixed some other already there, adjusted lighting areas, FX, and designed a path for the player to encounter the different texts/experiences.</p>
+
+<p id="introduction"> The experience and paper can be found at <a href="https://www.jesperjuul.net/text/gameofobjects/">Jesper's website</a>.</p>
+
+<div class="grid-container1">
+    <div class="grid-item">
+            <img src="Images/Juul/photo_5972199600896983048_w.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+        </a>
+    </div>
+    <div class="grid-item">
+            <img src="Images/Juul/photo_5972199600896983050_w.jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
+        </a>
+    
+    </div>
+    <div class="grid-item">
+        <img src="Images/Juul/image(16).jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+    </a>
+    </div>
+    <div class="grid-item">
+        <img src="Images/Juul/image(17).jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
+    </a>
+
+</div>
+    
+    <p class="image-title"> </p>
+    <!-- Add more grid items as needed -->
+</div>
+
+<div id="Esben">
+    <h2 style="text-align: left; margin: var(--margin-Base);">IOs build for Augment-X</h2>
+    
+    <p id="introduction"> Building <a href="https://apps.apple.com/us/app/augment-x/id6447903574?platform=iphone">Esben's app</a> through x-code, and handling the appstore needs for publishing. Debugging on X-code wasn't fun, but it worked out.</p>
+    
+    <p id="introduction"> </p>
+    
+    <div class="grid-container2">
+        <div class="grid-item">
+                <img src="Images/Esben/photo_5972199600896983051_y.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+            </a>
+        </div>
+        <div class="grid-item">
+                <img src="Images/Esben/photo_5972199600896983053_y.jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
+            </a>
+        
+        </div>
+        
+    
+    </div>
+        
+        <p class="image-title"> </p>
+        <!-- Add more grid items as needed -->
+    </div>
     
 
+    <div id="VR">
+        <h2 style="text-align: left; margin: var(--margin-Base);">VR Exhibition</h2>
+        
+        <p id="introduction"> Setting up a collaborative virtual stage for students to design and incorporate assets on a common scene, and building it for Oculus Quest 2. The main challenge was to handle git for a large amount of inexperienced users, introduce them to workflows, and assure performance.</p>
+        
+        <p id="introduction">The exhibition took place at Det Kongelige Akademi in May 2023.</p>
+        
+        <div class="grid-container1">
+            <div class="grid-item">
+                    <img src="Images/VRexhibit/01.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+                </a>
+            </div>
+            <div class="grid-item">
+                    <img src="Images/VRexhibit/02.jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
+                </a>
+            
+            </div> 
+        </div>
+        
+        <div class="grid-container2">
+            <div class="grid-item">
+                    <img src="Images/VRexhibit/Exhibition Space FPS_1080p_20.11.2023_02-08-07-min.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+                </a>
+            </div>
+            <div class="grid-item">
+                    <img src="Images/VRexhibit/Exhibition Space FPS_1080p_20.11.2023_02-08-38-min.jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
+                </a>
+            
+            </div> 
+            <div class="grid-item">
+                    <img src="Images/VRexhibit/Exhibition Space FPS_1080p_20.11.2023_02-09-42-min.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+                </a>
+            </div>
+            <div class="grid-item">
+                    <img src="Images/VRexhibit/Exhibition Space FPS_4K_20.11.2023_02-18-09-min.jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
+                </a>
+            
+            </div> 
+            
+            <div class="grid-item">
+                <img src="Images/VRexhibit/Exhibition Space FPS_4K_20.11.2023_02-20-34-min.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+            </a>
+        </div>
+        <div class="grid-item">
+                <img src="Images/VRexhibit/Exhibition Space FPS_4K_20.11.2023_14-52-37.jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
+            </a>
+        
+        </div> 
+
+        </div>
+            
+            <p class="image-title"> </p>
+            <!-- Add more grid items as needed -->
+        </div>
    
 
 </body>
