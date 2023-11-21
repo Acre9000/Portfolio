@@ -31,32 +31,70 @@
 
         #title {
             font-size: 4em;
-            text-align: center;
-            margin: 20px 20px;  
+            font-family: Oswald;
+            text-align: Left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;  
+        }
+
+        #title2 {
+            font-size: 3em;
+            font-family: Oswald;
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #subtitle {
-            font-size: 2em;
-            text-align: center;
-            margin: var(--margin-Base);
+            font-size: 3em;
+            margin-top: 4%;
+            font-family: Oswald;
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #introduction {
+            font-size: 1em;
             text-align: left;
-            margin: var(--margin-Base);
-        }
 
-        #NoteTitle {
-            font-size: 1.2em;
-            text-align: center;
-            margin: 20px 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family:Arial, Helvetica, sans-serif;
         }
 
         #index {
-            margin: var(--margin-Base);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
             text-align: left;
         }
 
+        #concept {
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+
+        #Blender {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+
+        #projects {
+            max-width: 700px;
+            margin-top: 4%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
                 
         .grid-container {
             display: grid;
@@ -92,6 +130,8 @@
 
         .grid-item {
             /*border: 3px solid #fff;*/
+            margin-left: auto;
+            margin-right: auto;
             padding: 3px;
             text-align: center;
             position: relative;
@@ -169,6 +209,49 @@ video {
   gap: 30px;
 }
 
+@media (min-width: 701px) {
+  #introduction,
+  #title,
+  #title2, #index, #concept, #Blender{
+    max-width: 700px; /* Keeps the width at 700px */
+  }
+  #projects {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 800px) {
+  #introduction, #title, #title2, #subtitle, #index, #concept, #Blender
+  {
+    max-width: calc(100% - 60px); /* Set maximum width with a minimum margin */
+    margin-left: 30px; /* Minimum margin on smaller screens */
+    margin-right: 30px;
+  }
+  #projects
+  {
+    max-width: calc(100% - 60px); /* Set maximum width with a minimum margin */
+    margin-left: 30px; /* Minimum margin on smaller screens */
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr); /* Change to 1 column for smaller screens */
+  }
+  .grid-container1 {
+    grid-template-columns: repeat(1, 1fr); /* Change to 1 column for smaller screens */
+  }
+  .grid-container2 {
+    grid-template-columns: repeat(1, 1fr); /* Change to 1 column for smaller screens */
+  }
+  .grid-container3 {
+    grid-template-columns: repeat(1, 1fr); /* Change to 1 column for smaller screens */
+  }
+}
         
 
     </style>
@@ -179,11 +262,11 @@ video {
     <div id="title">  Personal works </div>
     <div id="subtitle">Explorations, fantasies, studies, experiments</div>
 
-    <div id="index">
+    <div id="index" style="margin-top: 5%; font-size: 1.2em;">
 
             <a href="#concept">Concept</a>
-            <a href="#3D">3D</a>
-            <a href="#others">Others</a>
+            <a href="#Blender">3D</a>
+            
     </div>
 
     <!-- <p id="introduction"> Illustration and layout for adaptation of "The Tinderbox" by H.C. Andersen for <a href="https://www.aviendo.com/products/book_tinderbox" target="_blank">Aviendo Aps</a> during 2018-2019. Work done mostly with Photoshop and Indesign. </p> -->
@@ -196,17 +279,18 @@ video {
    
         
     <div id="concept">
-        <h2 style="text-align: left; margin: var(--margin-Base);">Concept</h2>
+        <h2>Concept</h2>
     
-    <div class="grid-container">
-        <div class="grid-item">
-                <img src="../Images/Personal/andres-cabrero-rodriguez-estecha-still-looking-for-fog.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
-                <p class="image-title">Landscape concept</p>
-            </a>
-            
-    </div>
+    
 
     <div id="projects">
+        <div class="grid-container">
+            <div class="grid-item">
+                    <img src="../Images/Personal/andres-cabrero-rodriguez-estecha-still-looking-for-fog.jpg" alt="Project 1">
+                    <p class="image-title">Landscape concept</p>
+                </a>
+                
+        </div>
     
         <div class="grid-container2">
             <div class="grid-item">
@@ -246,6 +330,7 @@ video {
             </div>
             </div>
 
+            
             <div class="grid-container1">
                 <div class="grid-item">
                         <img src="../Images/Personal/andres-cabrero-rodriguez-estecha-silhouettesonly-characterconcept.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
@@ -259,7 +344,10 @@ video {
             </div>
             </div>
 
-        <div class="grid-container1">
+            
+
+            <div id="projects">
+            <div class="grid-container1">
             <div class="grid-item">
                     <img src="../Images/Personal/andres-cabrero-rodriguez-estecha-facessketches2.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
                 </a>
@@ -268,9 +356,7 @@ video {
                     <img src="../Images/Personal/andres-cabrero-rodriguez-estecha-facessketches.jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
                 </a>
             
-            </div>
-            
-            
+            </div>            
             <p class="image-title">Expressions sketches</p>
             <!-- Add more grid items as needed -->
         </div>
@@ -278,10 +364,10 @@ video {
 
         
         
-        <div id="3D">
+        <div id="Blender">
             <h2 style="text-align: left; margin: var(--margin-Base);">3D</h2>
             
-            <p id="NoteTitle"> Procedural objects created in Blender with geometry nodes</p>
+            <p id="introduction"> Procedural objects created in Blender with geometry nodes</p>
 
             <div id="projects">
     
@@ -331,7 +417,7 @@ video {
 
 
                 <div id="others">
-                    <h2 style="text-align: left; margin: var(--margin-Base);">Others</h2>
+                    <h2 style="text-align: left; margin: var(--margin-Base);"></h2>
 </div>
 
     

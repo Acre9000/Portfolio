@@ -25,6 +25,7 @@
             background-color: #000;
             color: #fff;
             font-family: Arial, sans-serif;
+            
             margin: 0;
             padding: 0;
             text-align: left;
@@ -32,23 +33,54 @@
 
         #title {
             font-size: 4em;
-            text-align: center;
-            margin: 20px 20px;  
+            font-family: Oswald;
+            text-align: Left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;  
+        }
+
+        #title2 {
+            font-size: 3em;
+            font-family: Oswald;
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #subtitle {
             font-size: 3em;
-            text-align: center;
-            margin: var(--margin-Base);
+            margin-top: 4%;
+            font-family: Oswald;
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #introduction {
+            font-size: 1em;
             text-align: left;
-            margin: var(--margin-Base);
+
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family:Arial, Helvetica, sans-serif;
         }
 
         #index {
-            margin: var(--margin-Base);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+
+        #projects {
+            max-width: 700px;
+            margin-top: 4%;
+            margin-left: auto;
+            margin-right: auto;
             text-align: left;
         }
 
@@ -56,8 +88,7 @@
         .grid-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-gap: 2px;
-            margin: 30px 30px;
+            grid-gap: 5px;
             
         }
 
@@ -65,6 +96,15 @@
             /*border: 3px solid #fff;*/
             padding: 3px;
             text-align: center;
+            position: relative;
+            
+        }
+
+        .justcent {
+            /*border: 3px solid #fff;*/
+            padding: 3px;
+            text-align-last: center;
+            text-align: justify;
             position: relative;
             
         }
@@ -88,16 +128,57 @@
 
         .image-title {
         position: absolute;
-        bottom: 10;
-        left: 0%;
+        font-size: clamp(0.25rem, 3vw, 0.9rem);
+        bottom: 0;
+        left: 5%;
         transform: translateX(0%);
+        transform: translateY(170%);
         background-color: rgba(0, 0, 0, 0.7); /* Add a background color for better readability */
         color: #fff; /* Set the text color */
         padding: 0px; /* Add some padding for better aesthetics */
-        text-align: center; /* Center the text within the title box */
+        text-align: left; /* Center the text within the title box */
         width: 100%; /* Make the title box span the entire width of the image */
         }
+
+        .video-container {
+            margin-top: 35%;
+            margin: 0 auto; /* Center the container */
+            max-width: 100%; /* Ensure the container doesn't exceed the viewport width */
+        }
+
+        .video-container iframe {
+            display: block; /* Make sure the iframe is treated as a block-level element */
+            margin-top: 5%;
+            margin-bottom: 5%;
+            width: 100%; /* Fill the width of its container */
+            margin: 0 auto; /* Center the container */
+        }
         
+        /* Media query for larger screens */
+@media (min-width: 701px) {
+  #introduction,
+  #title,
+  #title2, #index, #projects {
+    max-width: 700px; /* Keeps the width at 700px */
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 800px) {
+  #introduction, #title, #title2, #subtitle, #index, #projects
+  {
+    max-width: calc(100% - 60px); /* Set maximum width with a minimum margin */
+    margin-left: 30px; /* Minimum margin on smaller screens */
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr); /* Change to 1 column for smaller screens */
+    grid-gap: 50px;
+  }
+}
         
 
     </style>

@@ -7,6 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Test Website</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+
+
     <style>
         :root {
             --margin-Base: 50px; /* Set your default margin value here */
@@ -16,6 +20,7 @@
             background-color: #000;
             color: #fff;
             font-family: Arial, sans-serif;
+            
             margin: 0;
             padding: 0;
             text-align: left;
@@ -23,23 +28,54 @@
 
         #title {
             font-size: 4em;
-            text-align: center;
-            margin: 20px 20px;  
+            font-family: Oswald;
+            text-align: Left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;  
+        }
+
+        #title2 {
+            font-size: 3em;
+            font-family: Oswald;
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #subtitle {
             font-size: 3em;
-            text-align: center;
-            margin: var(--margin-Base);
+            margin-top: 4%;
+            font-family: Oswald;
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #introduction {
+            font-size: 1em;
             text-align: left;
-            margin: var(--margin-Base);
+
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family:Arial, Helvetica, sans-serif;
         }
 
         #index {
-            margin: var(--margin-Base);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+
+        #projects {
+            max-width: 700px;
+            margin-top: 4%;
+            margin-left: auto;
+            margin-right: auto;
             text-align: left;
         }
 
@@ -47,8 +83,7 @@
         .grid-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
-            margin: 30px 30px;
+            grid-gap: 5px;
             
         }
 
@@ -56,6 +91,15 @@
             /*border: 3px solid #fff;*/
             padding: 3px;
             text-align: center;
+            position: relative;
+            
+        }
+
+        .justcent {
+            /*border: 3px solid #fff;*/
+            padding: 3px;
+            text-align-last: center;
+            text-align: justify;
             position: relative;
             
         }
@@ -79,17 +123,58 @@
 
         .image-title {
         position: absolute;
-        bottom: -2em;
-        left: 0%;
-        
+        font-size: clamp(1rem, 4vw, 1.5rem);
+        bottom: 0;
+        left: 5%;
         transform: translateX(0%);
+        transform: translateY(200%);
         background-color: rgba(0, 0, 0, 0.7); /* Add a background color for better readability */
         color: #fff; /* Set the text color */
         padding: 0px; /* Add some padding for better aesthetics */
-        text-align: center; /* Center the text within the title box */
+        text-align: left; /* Center the text within the title box */
         width: 100%; /* Make the title box span the entire width of the image */
         }
+
+        .video-container {
+            margin-top: 35%;
+            margin: 0 auto; /* Center the container */
+            max-width: 100%; /* Ensure the container doesn't exceed the viewport width */
+        }
+
+        .video-container iframe {
+            display: block; /* Make sure the iframe is treated as a block-level element */
+            margin-top: 5%;
+            margin-bottom: 5%;
+            width: 100%; /* Fill the width of its container */
+            margin: 0 auto; /* Center the container */
+        }
         
+        /* Media query for larger screens */
+@media (min-width: 701px) {
+  #introduction,
+  #title,
+  #title2, #index, #projects {
+    max-width: 700px; /* Keeps the width at 700px */
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 800px) {
+  #introduction, #title, #title2, #subtitle, #index, #projects
+  {
+    max-width: calc(100% - 60px); /* Set maximum width with a minimum margin */
+    margin-left: 30px; /* Minimum margin on smaller screens */
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr); /* Change to 1 column for smaller screens */
+  }
+}
+        
+
     </style>
 </head>
 <body>
@@ -98,23 +183,31 @@
 
     <p id="introduction"> Experimental game developed with Aggelos Efstathopoulos (<a href="https://cargocollective.com/birgif" target="_blank">birgif</a>), and produced by William Wagner, <a href="https://2022.amaze-berlin.de/award-winners/" target="_blank">Digital Moment Award</a> at A-MAZE 2022, and <a href="https://igf.com/archive/2020" target="_blank">Best Student Game</a> at IGF 2020</p>
 
-    <iframe style="margin: var(--margin-Base);" width="560" height="315" src="https://www.youtube.com/embed/1-wqZDVcW98" frameborder="0" allowfullscreen></iframe>
+    <p id="introduction"> BORE DOME is exhibited on the Black Diamond in Copenhagen as parts of the <a href="https://www.kb.dk/en/events/exhibitions/dkgame-danish-computer-games-1960s-2020s" target="_blank">#dkgame exhibition</a> (until January 2024).
 
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1-wqZDVcW98" frameborder="0" allowfullscreen></iframe>
+      </div>
+      
 
     <p id="introduction"> The roles in the project were pretty much shared between Aggelos and me, and we took part in almost all the work that each other produced. High level concepting and ideation was shared (Game Direction), and Art Direction was initially set by Aggelos, and adapted and reinterpreted by me. In a more practical / technical sense, my work included:</p>
 
-    <ul style="text-align: left; margin: var(--margin-Base);">
-        <li>Most 3D assets (characters and environments) and materials/shaders</li>
-        <li>Most 3D animations</li>
-        <li>Most in game FX</li>
-        <li>Engine tools</li>
-        <li>Game Design</li>
-        <li>Concept Art / Marketing Art</li>
-    </ul>
+    <div id="introduction">
+        <ul style="text-align: left; margin: var(--margin-Base);">
+            <li>Most 3D assets (characters and environments) and materials/shaders</li>
+            <li>Most 3D animations</li>
+            <li>Most in game FX</li>
+            <li>Engine tools</li>
+            <li>Game Design</li>
+            <li>Concept Art / Marketing Art</li>
+            <li>Music and audio effects</li>
+        </ul>
+    </div>
+    
     
     
     <div id="projects">
-    <h2 style="text-align: left; margin: var(--margin-Base);">Screenshots / Videos</h2>
+    <h2 style="text-align: left; margin: var(--margin-Base);">Screenshots</h2>
     <div class="grid-container">
         <div class="grid-item">
                 <img src="Images/BORE DOME/Scroons_0001_Layer-13(1).png" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
@@ -141,7 +234,12 @@
 </a>
 </div>
         <!-- Add more grid items as needed -->
-    </div>
+
+        
+</div>
+<p id="introduction"> <a href="https://photos.app.goo.gl/LqGTucXCWd61RKbDA" target="_blank">Here </a> is a link to a vast collection of sketches, captures, and process material, collected since BORE DOME initial development in 2018. This collection served as reference board, inspiration, and documenting resource for us.</p>
+
+
 </div>
 
     
@@ -151,21 +249,27 @@
 
 <p id="introduction"> Mobile game made with DADIU, featuring exploration on a semi open-world, focused on diverse player movement, using your shield to slide, surf and glide.</p>
 
-<iframe style="margin: var(--margin-Base);" width="560" height="315" src="https://www.youtube.com/embed/5O6j9qqKkq0?si=__UF09EZTghyaCDn" frameborder="0" allowfullscreen></iframe>
+<div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5O6j9qqKkq0?si=__UF09EZTghyaCDn" frameborder="0" allowfullscreen></iframe>
+  </div>
 
 
 <p id="introduction"> My role in this project was Art Director. I coordinated two artists with a team of programmers, the game director, project manager, and design team. I also ensured the vision for the game was met while keeping the mobile limitations in check. Other work included:</p>
 
-<ul style="text-align: left; margin: var(--margin-Base);">
-    <li>Concept Art</li>
-    <li>Marketing Art</li>
-    <li>Character Design</li>
- 
-</ul>
+<div id="introduction">
+    <ul style="text-align: left; margin: var(--margin-Base);">
+        <li>Concept Art</li>
+        <li>Marketing Art</li>
+        <li>Character Design</li>
+     
+    </ul>
+</div>
+
+
 
 
 <div id="projects">
-<h2 style="text-align: left; margin: var(--margin-Base);">Screenshots / Videos</h2>
+<h2 style="text-align: left; margin: var(--margin-Base);">Screenshots</h2>
 <div class="grid-container">
     <div class="grid-item">
             <img src="Images/Traces/DADIU_2018_Team5_Print2.png" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
