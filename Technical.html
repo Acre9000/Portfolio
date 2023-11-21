@@ -23,23 +23,63 @@
 
         #title {
             font-size: 4em;
-            text-align: center;
-            margin: 20px 20px;  
+            font-family: Oswald;
+            text-align: Left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-top: 5%;
+            margin-right: auto;  
+        }
+
+        #title2 {
+            font-size: 3em;
+            font-family: Oswald;
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #subtitle {
             font-size: 3em;
-            text-align: center;
-            margin: var(--margin-Base);
+            margin-top: 4%;
+            font-family: Oswald;
+            text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #introduction {
+            font-size: 1em;
             text-align: left;
-            margin: var(--margin-Base);
+
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family:Arial, Helvetica, sans-serif;
         }
 
         #index {
-            margin: var(--margin-Base);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+
+        #Esben, #jesper, #VR {
+            max-width: 700px;
+            margin-top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+
+        #projects {
+            max-width: 700px;
+            margin-top: 4%;
+            margin-left: auto;
+            margin-right: auto;
             text-align: left;
         }
 
@@ -60,7 +100,23 @@
             
         }
 
+        .grid-container1 {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 2px;
+            margin: 30px 30px;
+            
+        }
+
         .grid-item {
+            /*border: 3px solid #fff;*/
+            padding: 3px;
+            text-align: center;
+            position: relative;
+            
+        }
+
+        .grid-space {
             /*border: 3px solid #fff;*/
             padding: 30px;
             text-align: center;
@@ -97,6 +153,30 @@
         text-align: left; /* Center the text within the title box */
         width: 100%; /* Make the title box span the entire width of the image */
         }
+
+        @media (min-width: 701px) {
+  #introduction,
+  #title,
+  #title2, #index, #projects, #Esben, #Jesper {
+    max-width: 700px; /* Keeps the width at 700px */
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 800px) {
+  #introduction, #title, #title2, #subtitle, #index, #projects, #Esben, #Jesper
+  {
+    max-width: calc(100% - 60px); /* Set maximum width with a minimum margin */
+    margin-left: 30px; /* Minimum margin on smaller screens */
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .grid-container, .grid-container2, .grid-container1 {
+    grid-template-columns: repeat(1, 1fr); /* Change to 1 column for smaller screens */
+  }
+}
         
     </style>
 </head>
@@ -114,30 +194,31 @@
    
         
     <div id="projects">
-    <h2 style="text-align: left; margin: var(--margin-Base);">Projects</h2>
+    <h2 style="text-align: left; margin: var(--margin-Base); font-size: 2em;
+    ">Projects</h2>
 
 
     <div class="grid-container">
-        <div class="grid-item">
+        <div class="grid-space">
             <a href="#jesper"> <!-- Link to HTML file for Project 1 -->
                 <img src="Images/Juul/image(16).jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
             </a>
             <p class="image-title">The Game of Video Game Objects (Jesper Juul 2021)</p>
         </div>
-        <div class="grid-item">
+        <div class="grid-space">
             <a href="#Esben"> <!-- Link to HTML file for Project 2 -->
                 <img src="Images/Esben/image(18).png" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
             </a>
             <p class="image-title">IOs build for Augment-X (Esben Holk 2022)</p>
         </div>
-        <div class="grid-item">
+        <div class="grid-space">
             <a href="#VR"> <!-- Link to HTML file for Project 3 -->
                 <img src="Images/VRexhibit/02.jpg" alt="Project 3" style="object-fit: cover; width: 100%; height: 100%;">
             </a>
             <p class="image-title">VR Exhibition (Det Kongelige Akademi 2022)</p>
         </div>
-        <div class="grid-item">
-            <a href="https://www.timestoryvr.com/en_en/projekter/hjaelpevaerktoej-til-boern/"> <!-- Link to HTML file for Project 3 -->
+        <div class="grid-space">
+            <a href="#Timestory"> <!-- Link to HTML file for Project 3 -->
                 <img src="Images/Timestory/1.png" alt="Project 3" style="object-fit: cover; width: 100%; height: 100%;">
             </a>
             <p class="image-title">Santa and the Magical Words (Timestory VR Aps)</p>
@@ -147,68 +228,72 @@
 </div>
 
 <div id="jesper">
-<h2 style="text-align: left; margin: var(--margin-Base);">The Game of Video Game Objects</h2>
 
-<p id="introduction"> During a couple of months I helped academic Jesper Juul creating a level for his interactive research piece. I created assets, remixed some other already there, adjusted lighting areas, FX, and designed a path for the player to encounter the different texts/experiences.</p>
+    <h2 id="Jesper">The Game of Video Game Objects</h2>
+
+    <p id="introduction"> During a couple of months I helped academic Jesper Juul creating a level for his interactive research piece. I created assets, remixed some other already there, adjusted lighting areas, FX, and designed a path for the player to encounter the different texts/experiences.</p>
+
+    
+    <p id="Jesper">
+        <div class="grid-container1">
+            <div class="grid-item">
+                    <img src="Images/Juul/photo_5972199600896983048_w.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+                </a>
+            </div>
+            <div class="grid-item">
+                    <img src="Images/Juul/photo_5972199600896983050_w.jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
+                </a>
+            
+            </div>
+            <div class="grid-item">
+                <img src="Images/Juul/image(16).jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+            </a>
+            </div>
+            <div class="grid-item">
+                <img src="Images/Juul/image(17).jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
+            </a>
+        
+        </div>
+            
+            <p class="image-title"> </p>
+            <!-- Add more grid items as needed -->
+        </div>
+    </p>
 
 <p id="introduction"> The experience and paper can be found at <a href="https://www.jesperjuul.net/text/gameofobjects/">Jesper's website</a>.</p>
 
-<div class="grid-container1">
-    <div class="grid-item">
-            <img src="Images/Juul/photo_5972199600896983048_w.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
-        </a>
-    </div>
-    <div class="grid-item">
-            <img src="Images/Juul/photo_5972199600896983050_w.jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
-        </a>
-    
-    </div>
-    <div class="grid-item">
-        <img src="Images/Juul/image(16).jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
-    </a>
-    </div>
-    <div class="grid-item">
-        <img src="Images/Juul/image(17).jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
-    </a>
 
-</div>
-    
-    <p class="image-title"> </p>
-    <!-- Add more grid items as needed -->
-</div>
+
+
 
 <div id="Esben">
-    <h2 style="text-align: left; margin: var(--margin-Base);">IOs build for Augment-X</h2>
+    <h2 id="Esben">IOs build for Augment-X</h2>
     
     <p id="introduction"> Building <a href="https://apps.apple.com/us/app/augment-x/id6447903574?platform=iphone">Esben's app</a> through x-code, and handling the appstore needs for publishing. Debugging on X-code wasn't fun, but it worked out.</p>
     
-    <p id="introduction"> </p>
-    
-    <div class="grid-container2">
-        <div class="grid-item">
-                <img src="Images/Esben/photo_5972199600896983051_y.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
-            </a>
-        </div>
-        <div class="grid-item">
-                <img src="Images/Esben/photo_5972199600896983053_y.jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
-            </a>
+    <p id="introduction">
+        <div class="grid-container2">
+            <div class="grid-item">
+                    <img src="Images/Esben/photo_5972199600896983051_y.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+                </a>
+            </div>
+            <div class="grid-item">
+                    <img src="Images/Esben/photo_5972199600896983053_y.jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
+                </a>
+            
+            </div>
+            
         
         </div>
-        
-    
-    </div>
-        
-        <p class="image-title"> </p>
-        <!-- Add more grid items as needed -->
-    </div>
+    </p>
     
 
     <div id="VR">
-        <h2 style="text-align: left; margin: var(--margin-Base);">VR Exhibition</h2>
+        <h2 id="VR">VR Exhibition</h2>
         
         <p id="introduction"> Setting up a collaborative virtual stage for students to design and incorporate assets on a common scene, and building it for Oculus Quest 2. The main challenge was to handle git for a large amount of inexperienced users, introduce them to workflows, and assure performance.</p>
         
-        <p id="introduction">The exhibition took place at Det Kongelige Akademi in May 2023.</p>
+        <p id="introduction">  The exhibition took place at Det Kongelige Akademi in May 2023. </p>
         
         <div class="grid-container1">
             <div class="grid-item">
@@ -258,6 +343,35 @@
             <!-- Add more grid items as needed -->
         </div>
    
+    <div id="Timestory">
+            <h2 style="text-align: left; margin: var(--margin-Base);">Christmas VR app for kids</h2>
+            
+            <p id="introduction"> Visual research, character design, animation work and technical help with Unity for Timestory VR Aps in 2018-19. The experience was supposed to be a short (5 mins) immersive situation where kids help Santa by saying some magic words.</p>
+            
+            
+            <div class="grid-container1">
+                <div class="grid-item">
+                        <img src="Images/Timestory/1.png" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+                    </a>
+                </div>
+                <div class="grid-item">
+                        <img src="Images/Timestory/image(18).png" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
+                    </a>
+                
+                </div>
+                <div class="grid-item">
+                    <img src="Images/Timestory/pastedImage.png" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+                </a>
+                </div>
+                <div class="grid-item">
+                    <img src="Images/Timestory/Concept_General.jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
+                </a>
+            
+            </div>
+                
+                <p class="image-title"> </p>
+                <!-- Add more grid items as needed -->
+            </div>
 
 </body>
 </html>
