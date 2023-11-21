@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+
+ <!-- Glide attempts:
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="glide-init.js"></script>
+ -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+
+    <title>The Test Website</title>
+    <style>
+        :root {
+            --margin-Base: 50px; /* Set your default margin value here */
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        #title {
+            font-size: 4em;
+            text-align: center;
+            margin: 20px 20px;  
+        }
+
+        #subtitle {
+            font-size: 2em;
+            text-align: center;
+            margin: var(--margin-Base);
+        }
+
+        #introduction {
+            text-align: left;
+            margin: var(--margin-Base);
+        }
+
+        #NoteTitle {
+            font-size: 1.2em;
+            text-align: center;
+            margin: 20px 20px;
+        }
+
+        #index {
+            margin: var(--margin-Base);
+            text-align: left;
+        }
+
+                
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 50px;
+            margin: 30px 30px;
+            
+        }
+
+        .grid-container img {
+            
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            position: relative;
+            
+        }
+
+        .grid-container2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2px;
+            margin: 30px 30px;
+            
+        }
+
+        .grid-container3 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            margin: 30px 30px;
+        }
+
+        .grid-item {
+            /*border: 3px solid #fff;*/
+            padding: 3px;
+            text-align: center;
+            position: relative;
+            
+        }
+
+        .grid-video {
+            flex: 1 1 45%; /* Adjust width as needed */
+            max-width: 100%; /* Allow videos to scale down on smaller
+             screens */ 
+            margin-bottom: 20px; /* Adjust spacing between rows */
+            justify-content: center; /* Center items horizontally */
+        }
+        
+        a {
+            color: #c116e3; /* Set the color you prefer using hexadecimal, RGB, or      color names */
+            text-decoration: none; /* Remove underlines from links, if desired */
+        }
+
+        a:hover {
+            color: #16ec8f; /* Set the color for the link when hovered over */
+        }
+
+        .image-title {
+        position: relative;
+        
+        left: 10%;
+        bottom: 1%;
+        transform: translateX(0%);
+        background-color: rgba(0, 0, 0, 0.7); /* Add a background color for better readability */
+        color: #a9a9a9; /* Set the text color */
+        padding: 0px; /* Add some padding for better aesthetics */
+        text-align: left; /* Center the text within the title box */
+        width: 100%; /* Make the title box span the entire width of the image */
+        }
+        
+        .video-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Gap between videos */
+        margin: 0 auto; /* Center the container */
+        max-width: calc(608px * 2 + 20px); /* Maximum width including gaps */
+        }
+
+/* Adjust the size of the videos based on screen width */
+video {
+        max-width: 100%; 
+        max-height: 600px;
+        }
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% opacity black */
+  z-index: 999; /* Ensure it's on top */
+}
+
+/* Center the image */
+.expanded-image {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Ensure it's on top of the overlay */
+}
+
+#index {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+        
+
+    </style>
+    
+
+</head>
+<body>
+    <div id="title">  Personal works </div>
+    <div id="subtitle">Explorations, fantasies, studies, experiments</div>
+
+    <div id="index">
+
+            <a href="#concept">Concept</a>
+            <a href="#3D">3D</a>
+            <a href="#others">Others</a>
+    </div>
+
+    <!-- <p id="introduction"> Illustration and layout for adaptation of "The Tinderbox" by H.C. Andersen for <a href="https://www.aviendo.com/products/book_tinderbox" target="_blank">Aviendo Aps</a> during 2018-2019. Work done mostly with Photoshop and Indesign. </p> -->
+
+    <!-- <p id="introduction" style="text-align: center;">  Maybe <a href="https://www.artstation.com/acre" target="_blank">Artstation</a> makes sense?   </p> -->
+    
+    
+    
+
+   
+        
+    <div id="concept">
+        <h2 style="text-align: left; margin: var(--margin-Base);">Concept</h2>
+    
+    <div class="grid-container">
+        <div class="grid-item">
+                <img src="../Images/Personal/andres-cabrero-rodriguez-estecha-still-looking-for-fog.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+                <p class="image-title">Landscape concept</p>
+            </a>
+            
+    </div>
+
+    <div id="projects">
+    
+        <div class="grid-container2">
+            <div class="grid-item">
+                    <img src="../Images/Personal/andres-cabrero-rodriguez-estecha-file-8.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;" class="clickable-image">
+                </a>
+            </div>
+            <div class="grid-item">
+                    <img src="../Images/Personal/andres-cabrero-rodriguez-estecha-file3-1.jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;" class="clickable-image">
+                </a>
+            </div>
+            <div class="grid-item">
+                    <img src="../Images/Personal/andres-cabrero-rodriguez-estecha-file1.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;" class="clickable-image">
+                </a>
+            </div>
+            <div class="grid-item">
+                    <img src="../Images/Personal/andres-cabrero-rodriguez-estecha-file2-1.jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;" class="clickable-image">
+                </a>
+            </div>
+            <p class="image-title">Character design study / breakdown</p>
+            <!-- Add more grid items as needed -->
+        </div>
+        </div>
+
+        <div id="projects">
+    
+            <div class="grid-container2">
+                <div class="grid-item">
+                        <img src="../Images/Personal/andres-cabrero-rodriguez-estecha-senora-random02.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+                    </a>
+                </div>
+                <div class="grid-item">
+                        <img src="../Images/Personal/andres-cabrero-rodriguez-estecha-miss-random02.gif" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
+                    </a>
+                </div>
+               
+                </div>
+            </div>
+            </div>
+
+            <div class="grid-container1">
+                <div class="grid-item">
+                        <img src="../Images/Personal/andres-cabrero-rodriguez-estecha-silhouettesonly-characterconcept.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+                    </a>
+                </div>                
+                </div>
+                
+                
+                <p class="image-title">Character design, process, and silhouette exploration.</p>
+                <!-- Add more grid items as needed -->
+            </div>
+            </div>
+
+        <div class="grid-container1">
+            <div class="grid-item">
+                    <img src="../Images/Personal/andres-cabrero-rodriguez-estecha-facessketches2.jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+                </a>
+            </div>
+            <div class="grid-item">
+                    <img src="../Images/Personal/andres-cabrero-rodriguez-estecha-facessketches.jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
+                </a>
+            
+            </div>
+            
+            
+            <p class="image-title">Expressions sketches</p>
+            <!-- Add more grid items as needed -->
+        </div>
+        </div>
+
+        
+        
+        <div id="3D">
+            <h2 style="text-align: left; margin: var(--margin-Base);">3D</h2>
+            
+            <p id="NoteTitle"> Procedural objects created in Blender with geometry nodes</p>
+
+            <div id="projects">
+    
+                <div class="grid-container1">
+                    <div class="grid-item">
+                            <img src="../Images/Personal/andres-cabrero-rodriguez-estecha-coral02.jpeg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                            <img src="../Images/Personal/Candyflop.jpeg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
+                            
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="grid-container2">
+                    <div class="grid-item">
+                            <img src="../Images/Personal/andres-cabrero-rodriguez-estecha-candymonster1.jpeg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                            <img src="../Images/Personal/andres-cabrero-rodriguez-estecha-candymonster2.jpeg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
+                            
+                        </a>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="grid-container3">
+                        <div class="grid-video">
+                            <video controls>
+                                <source src="../Images/Personal/CandyGif.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="grid-video">
+                            <video controls>
+                                <source src="../Images/Personal/CandyGif (1).mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                  
+                             
+
+
+                <div id="others">
+                    <h2 style="text-align: left; margin: var(--margin-Base);">Others</h2>
+</div>
+
+    
+<script src="imageExpand.js"></script>
+   
+
+</body>
+</html>

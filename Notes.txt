@@ -1,4 +1,16 @@
-This is a note pad, where I will keep some notes for things:
+**************************
+IN ORDER TO "FINISH" THE DEAL:
+******************************
+*On the Technical page, you have to either create pages for each project (html files), or link the images with sections on the same page that contain a description and some images about the project.
+*Contact link (mail) and other relevant social media links
+*BoreDome could use some process images/gifs.
+
+With that, a bit of styling, and this is done. Youtube videos should be centered and max width or smth, limit size so that they don't overflow.
+
+*********************
+NOTES FOR FURTHER "DEVELOPMENT"
+*********************
+-Expandable images when clicked (js code not working right now, will move on for the moment)
 
 -Break points interesting for styling
 ------------------
@@ -45,3 +57,18 @@ css
 @media (min-height: 60vh) {
     /* Styles here */
 }
+
+------------------
+-Lazy loading 
+
+Technique used to defer the loading of non-critical resources on a web page, such as images or videos, until they are needed. It's particularly beneficial for web pages with a large number of images or content below the fold (content not immediately visible when the page loads).
+
+The concept revolves around loading only the visible content initially and then loading additional content as the user scrolls down the page, improving the initial page load time and reducing unnecessary data consumption.
+
+Implementing Lazy Loading:
+
+You can use native browser functionality, JavaScript libraries, or frameworks to implement lazy loading. HTML5 introduces the loading="lazy" attribute for images, which browsers can use to lazy load images without additional JavaScript.
+
+<img src="placeholder.jpg" data-src="actual-image.jpg" loading="lazy" alt="Description">
+-----------------
+

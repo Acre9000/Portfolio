@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="glide-init.js"></script> <!-- Link to your JavaScript file -->
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Test Website</title>
@@ -43,15 +46,15 @@
                 
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 2px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
             margin: 30px 30px;
             
         }
 
         .grid-item {
             /*border: 3px solid #fff;*/
-            padding: 3px;
+            padding: 30px;
             text-align: center;
             position: relative;
             
@@ -90,44 +93,43 @@
 </head>
 <body>
     <div id="title">Technical </div>
-    <div id="subtitle">Portfolio</div>
+    <div id="subtitle">Problem solving</div>
 
-    <p id="introduction"> Welcome! Feel comfortable, rejoyce in this bare (and under construction) webspace, proudly self hosted for free on Github, and put together with the help of Almighty Chatgpt 3.5 during some dark days in November 2023.</p>
+    <p id="introduction"> These are projects where I have helped creating tools, or helped work with specific tools; having a very concrete problem to provide assistance with. Also generally interesting random collaborations that involved me learning something.  </p>
 
-    <p id="introduction"> My work will be listed in here, as well as links, other resources and relevant documents. In case you don't know me, I am Andrés, a generalist game developer, occasionally coding, mostly devoting my professional and personal time to the tools surrounding the medium of videogames. I draw, model, animate, compose, and program. Lately I research VR, and work mostly with Blender and Unity.</p>
+    <!-- <p id="introduction" style="text-align: center;">  Maybe <a href="https://www.artstation.com/acre" target="_blank">Artstation</a> makes sense?   </p> -->
     
-    <p id="introduction" style="text-align: center;">  Here you can <a href="Documents/CV_Andres.pdf" target="_blank">view my CV</a>    </p>
+    
     
 
-    <div id="index">
-        <h2>Index</h2>
-        <ul>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#tools">Tools</a></li>
-        </ul>
-    </div>
+   
         
     <div id="projects">
     <h2 style="text-align: left; margin: var(--margin-Base);">Projects</h2>
     <div class="grid-container">
         <div class="grid-item">
-            <a href="Games.html"> <!-- Link to HTML file for Project 1 -->
-                <img src="Images/BD01.png" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+            <a href="https://www.jesperjuul.net/text/gameofobjects/"> <!-- Link to HTML file for Project 1 -->
+                <img src="Images/Juul/image(16).jpg" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
             </a>
-            <p class="image-title">Games</p>
+            <p class="image-title">The Game of Video Game Objects (Jesper Juul 2021)</p>
         </div>
         <div class="grid-item">
-            <a href="Visdev.html"> <!-- Link to HTML file for Project 2 -->
-                <img src="Images/Traces.png" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
+            <a href="https://apps.apple.com/us/app/augment-x/id6447903574?platform=iphone"> <!-- Link to HTML file for Project 2 -->
+                <img src="Images/Esben/image(18).png" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
             </a>
-            <p class="image-title">Visdev / Concept / Illustration</p>
+            <p class="image-title">IOs build for Augment-X (Esben Holk 2022)</p>
         </div>
         <div class="grid-item">
             <a href="Technical.html"> <!-- Link to HTML file for Project 3 -->
-                <img src="Images/Still looking for fog.jpg" alt="Project 3" style="object-fit: cover; width: 100%; height: 100%;">
+                <img src="Images/VRexhibit/Exhibition Space FPS_4K_20.11.2023_02-22-30-min.jpg" alt="Project 3" style="object-fit: cover; width: 100%; height: 100%;">
             </a>
-            <p class="image-title">Technical</p>
+            <p class="image-title">VR Exhibition (Det Kongelige Akademi 2022)</p>
+        </div>
+        <div class="grid-item">
+            <a href="https://www.timestoryvr.com/en_en/projekter/hjaelpevaerktoej-til-boern/"> <!-- Link to HTML file for Project 3 -->
+                <img src="Images/Timestory/1.png" alt="Project 3" style="object-fit: cover; width: 100%; height: 100%;">
+            </a>
+            <p class="image-title">Santa and the Magical Words (Timestory VR Aps)</p>
         </div>
         <!-- Add more grid items as needed -->
     </div>
@@ -135,68 +137,7 @@
 
     
 
-    <div id="experience">
-        <h2 style="margin-top: 100px;">Experience  </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Proin euismod justo nec mauris feugiat, sit amet feugiat arcu tincidunt.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod 
-            justo nec mauris feugiat, sit amet feugiat arcu tincidunt.Lorem ipsum dolor
-             sit amet, consectetur adipiscing elit. Proin euismod justo nec mauris feugiat,
-              sit amet feugiat arcu tincidunt.Lorem ipsum dolor sit amet, consectetur
-               adipiscing elit. Proin euismod justo nec mauris feugiat, sit amet feugiat
-                arcu tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 Proin euismod justo nec mauris feugiat, sit amet feugiat arcu tincidunt.
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod 
-                 justo nec mauris feugiat, sit amet feugiat arcu tincidunt.Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit. Proin euismod justo nec
-                   mauris feugiat, sit amet feugiat arcu tincidunt.</p>
-    </div>
-
-    <div id="tools">
-        <h2>Tools</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Proin euismod justo nec mauris feugiat, sit amet feugiat arcu tincidunt.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod 
-            justo nec mauris feugiat, sit amet feugiat arcu tincidunt.Lorem ipsum dolor
-             sit amet, consectetur adipiscing elit. Proin euismod justo nec mauris feugiat,
-              sit amet feugiat arcu tincidunt.Lorem ipsum dolor sit amet, consectetur
-               adipiscing elit. Proin euismod justo nec mauris feugiat, sit amet feugiat
-                arcu tincidunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 Proin euismod justo nec mauris feugiat, sit amet feugiat arcu tincidunt.
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod 
-                 justo nec mauris feugiat, sit amet feugiat arcu tincidunt.Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit. Proin euismod justo nec
-                   mauris feugiat, sit amet feugiat arcu tincidunt.</p>
-    </div>
-
-    <!-- JavaScript to highlight active index item -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const sections = document.querySelectorAll("section[id]");
-            const navLinks = document.querySelectorAll("#index ul li a");
-
-            window.addEventListener("scroll", highlightNavItem);
-
-            function highlightNavItem() {
-                let current = "";
-
-                sections.forEach((section) => {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
-                    if (pageYOffset >= sectionTop - sectionHeight / 3) {
-                        current = section.getAttribute("id");
-                    }
-                });
-
-                navLinks.forEach((link) => {
-                    link.classList.remove("active");
-                    if (link.getAttribute("href").slice(1) === current) {
-                        link.classList.add("active");
-                    }
-                });
-            }
-        });
-    </script>
+   
 
 </body>
 </html>
