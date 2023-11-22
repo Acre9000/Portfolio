@@ -27,4 +27,4 @@ Mysticism, fantasy, and curiosity remain our own abstract sources of meaning.
 That being said *(waoh, no one asked anything and I just puked a manifesto or something on my own, congratulations, me, you did it again)*, this repository is here to document the process, and introduce any interested person, to the usage of chatgpt for web creation.
 A portfolio website contains the basics I need for this test: Information, text, documents, links, videos, and different interconnected pages.
 
-The conversation with chatgpt (this will be updated as this research expands) can be found [here]([url](https://chat.openai.com/share/37b235a1-9990-419c-ba49-0cd31073661d)
+The conversation with chatgpt (this will be updated as this research expands) can be found [here](https://chat.openai.com/share/37b235a1-9990-419c-ba49-0cd31073661d)
