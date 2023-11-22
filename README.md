@@ -28,3 +28,11 @@ That being said *(waoh, no one asked anything and I just puked a manifesto or so
 A portfolio website contains the basics I need for this test: Information, text, documents, links, videos, and different interconnected pages.
 
 The conversation with chatgpt (this will be updated as this research expands) can be found [here](https://chat.openai.com/share/37b235a1-9990-419c-ba49-0cd31073661d)
+
+Feel free to download and mutate this as you wish. I utilized this as a tool for myself, and hopefully someone with my same (0) level of knowledge on web design, will find this useful. The present situation fo the website is definitely up for enhancements of many kinds.
+
+Among them:
+
+- Organized styling (instead of repeated code on every html file)
+- Usage of external javascript libraries for extra functionality (my initial and unsuccessful attempt has been with [Glide.js](https://glidejs.com/)
+- Implement lazy loading
