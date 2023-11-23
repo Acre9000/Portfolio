@@ -1,7 +1,7 @@
 **************************
 IN ORDER TO "FINISH" THE DEAL:
 ******************************
-*On the Technical page, you have to either create pages for each project (html files), or link the images with sections on the same page that contain a description and some images about the project.
+X DONE *On the Technical page, you have to either create pages for each project (html files), or link the images with sections on the same page that contain a description and some images about the project.
 *Contact link (mail) and other relevant social media links
 *BoreDome could use some process images/gifs.
 
@@ -10,6 +10,10 @@ With that, a bit of styling, and this is done. Youtube videos should be centered
 *********************
 NOTES FOR FURTHER "DEVELOPMENT"
 *********************
+-Cleanup styles, and conform rules for titles, subtitles, sections, image sizes, videos, and so on.
+
+-Carousel library Glide.js implementation for interactable image collections. here (https://codepen.io/syrizaldev/pen/bGGZLaW) you can see code snippets, but implementation has not been easy.
+
 -Expandable images when clicked (js code not working right now, will move on for the moment)
 
 -Break points interesting for styling
