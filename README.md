@@ -1,6 +1,6 @@
 # Creating a web portfolio with Chatgpt
 
-I am not a developer by training, and my objective here is simple: Chatgpt is maybe the biggest, richest, and most interactive piece of compiled human knowledge. And I am using it to learn.
+I am not a developer by training, and my objective here is simple: Chatgpt is something like an interactive librarian compiling a bunch of human knowledge. And I am using it to learn.
 
 ## About AI and ethics
 
