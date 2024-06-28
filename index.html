@@ -131,8 +131,18 @@
         background-color: rgba(0, 0, 0, 0.7); /* Add a background color for better readability */
         color: #fff; /* Set the text color */
         padding: 0px; /* Add some padding for better aesthetics */
-        text-align: left; /* Center the text within the title box */
+        text-align: center; /* Center the text within the title box */
         width: 100%; /* Make the title box span the entire width of the image */
+        }
+
+        .horizontal-list {
+        list-style-type: disc; /* Change to desired list style */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
+        display: flex; /* Use Flexbox */
+        justify-content: center; /* Center the items horizontally */
+        align-items: center; /* Center the items vertically */
+        gap: 50px; /* Add space between items */
         }
         
         /* Media query for larger screens */
@@ -150,7 +160,7 @@
   {
     max-width: calc(100% - 60px); /* Set maximum width with a minimum margin */
     margin-left: 30px; /* Minimum margin on smaller screens */
-    margin-right: 30px;
+    margin-right: 30px; 
   }
 }
         
@@ -160,7 +170,7 @@
 <body>
     <div id="title"> Andrés </div>
     <div id="title2"> Cabrero Rodríguez-Estecha</div>
-    <div id="subtitle">Portfolio</div>
+     <!-- <div id="subtitle">Portfolio</div> -->
 
     <p id="introduction"> Andrés is an interdisciplinary artist, award-winning game developer, and educator. He is researching and teaching at Det Kongelige Akademi in Copenhagen, while working freelance on /usually/ game related projects.</p>
 
@@ -169,9 +179,18 @@
     <p id="introduction" style="text-align: center;">  Here you can <a href="Documents/CV_Andres.pdf" target="_blank">view my CV</a>    </p>
     
 
-    <div id="index">
-        <h2>Index</h2>
+    <!--<div id="index">
+        <h2>Index</h2> <!-- Vertical 
         <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#tools">Contact</a></li>
+        </ul>
+    </div>-->
+
+    <div id="index">
+        <h2>Index</h2> <!-- Horizontal -->
+        <ul class="horizontal-list">
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#tools">Contact</a></li>
