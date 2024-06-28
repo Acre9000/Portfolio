@@ -153,6 +153,44 @@
             width: 100%; /* Fill the width of its container */
             margin: 0 auto; /* Center the container */
         }
+
+       
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Adjust based on your preference */
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap if necessary */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.gallery-item {
+    flex: 2 2 40%; /* Allow flexibility but generally keep items 30% wide */
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.separator {
+            width: 100%;
+            height: 2px;
+            background-color: rgb(255, 255, 255); /* You can change the color as needed */
+            margin: 200px 0; /* 200px space before and after the line */
+        }
         
         /* Media query for larger screens */
 @media (min-width: 701px) {
@@ -164,7 +202,7 @@
 }
 
 /* Media query for smaller screens */
-@media (max-width: 800px) {
+@media (max-width: 200px) {
   #introduction, #title, #title2, #subtitle, #index, #projects
   {
     max-width: calc(100% - 60px); /* Set maximum width with a minimum margin */
@@ -221,6 +259,23 @@
     </div>
 
    
+    <div class="separator"></div>
+
+    <div class="gallery">
+        <div class="gallery-row">
+            <div class="gallery-item"><img src="Images/Character Design/Prop design.jpg" alt="Image 1"></div>
+            <div class="gallery-item"><img src="Images/Character Design/Ratoesunrato.jpg" alt="Image 2"></div>
+            <div class="gallery-item"><img src="Images/Character Design/Who up for a dance.jpg" alt="Image 3"></div>
+        </div>
+        <div class="gallery-row">
+            <div class="gallery-item"><img src="Images/Character Design/Huh, yo.jpg" alt="Image 4"></div>
+            <div class="gallery-item"><img src="Images/Character Design/Goblenz.jpg" alt="Image 5"></div>
+            <div class="gallery-item"><img src="Images/Character Design/94195399.jpg" alt="Image 6"></div>
+        </div>
+        <!-- Add more rows as needed -->
+    </div>
+
+    
 
 </div>
 
