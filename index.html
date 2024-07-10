@@ -15,7 +15,7 @@
         }
 
         body {
-            background-color: #000;
+            background-color: #211228;
             color: #fff;
             font-family: Arial, sans-serif;
             
@@ -24,19 +24,61 @@
             text-align: left;
         }
 
-        #title {
-            font-size: 4em;
-            font-family: Oswald;
-            margin-top: 4%;
-            text-align: Left;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;  
-        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            text-align: left;
+            background-color: #211228; /* Change as needed */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.366); /* Optional: Adds a subtle shadow */
+            z-index: 1000; /* Ensures the header is above other content */
+            }
+        
+            #main-title {
+        position: relative;
+        text-align: center;
+        color: white; /* Change to your desired text color */
+        height: 200px; 
+        margin-bottom: 5%;
+    }
+    
+    #background-image {
+        position: relative;
+        text-align: top;
+        top: -50%;
+        padding: 200px 500px; /* Adjust padding to control the height of the background image area */
+        background: url('images/Still\ looking\ for\ fog.jpg') no-repeat center center;
+        background-size: cover;
+        z-index: -2;
+    }
 
+    #background-gradient {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #211228, rgba(255, 0, 0, 0)); /* Adjusted gradient */
+    z-index: -1;
+    }  
+
+    #title {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        margin-bottom: 20%;
+        left: 0%;
+        font-size: 3em;
+        font-family: "DM Serif Display", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+    }
         #title2 {
             font-size: 3em;
-            font-family: Oswald;
+            font-family: "DM Serif Display", serif;
+            font-weight: 400;
+            font-style: normal;
             text-align: left;
             max-width: 700px;
             margin-left: auto;
@@ -54,28 +96,40 @@
         }
 
         #introduction {
-            font-size: 1em;
+            
+            
+            font-size: 1.25em;
             text-align: left;
-
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
-            font-family:Arial, Helvetica, sans-serif;
+            font-family: "Lato", sans-serif;           
+            font-weight: 400;
+            font-style: normal;
         }
 
         #index {
+            font-size: 1.5em;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
             text-align: left;
+            font-family: "Lato", sans-serif;            
+            font-weight: 400;
+            font-style: normal;
+            
         }
 
         #projects {
+            font-size: 1.2em;
             max-width: 700px;
             margin-top: 4%;
             margin-left: auto;
             margin-right: auto;
             text-align: left;
+            font-family: "Lato", sans-serif;            
+            font-weight: 400;
+            font-style: normal;
         }
 
                 
@@ -107,8 +161,15 @@
         
         #experience,
         #tools {
-            margin: var(--margin-Base);
+            
+            font-size: 1.25em;
             text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: "Lato", sans-serif;           
+            font-weight: 400;
+            font-style: normal;
         }
 
         
@@ -128,7 +189,7 @@
         left: 5%;
         transform: translateX(0%);
         transform: translateY(200%);
-        background-color: rgba(0, 0, 0, 0.7); /* Add a background color for better readability */
+        background-color: rgba(229, 36, 36, 0); /* Add a background color for better readability */
         color: #fff; /* Set the text color */
         padding: 0px; /* Add some padding for better aesthetics */
         text-align: center; /* Center the text within the title box */
@@ -136,19 +197,30 @@
         }
 
         .horizontal-list {
-        list-style-type: disc; /* Change to desired list style */
+        font-size: 0.65em;
+        font-family: "Lato", sans-serif;           
+        font-weight: 700;
+        font-style: i;
+        list-style-type: none; /* Change to desired list style */
         padding: 0; /* Remove padding */
-        margin: 0; /* Remove margin */
+        margin: 10px; /* Remove margin */
         display: flex; /* Use Flexbox */
-        justify-content: center; /* Center the items horizontally */
+        justify-content: left; /* Center the items horizontally */
         align-items: center; /* Center the items vertically */
-        gap: 50px; /* Add space between items */
+        gap: 100px; /* Add space between items */
         }
         
         /* Media query for larger screens */
-@media (min-width: 701px) {
+        @media (min-width: 701px) {
+  #title {
+    margin-left: 20%; /* Minimum margin on smaller screens */
+    margin-right: 20%;   
+}
+}
+
+        @media (min-width: 701px) {
   #introduction,
-  #title,
+
   #title2, #index, #projects {
     max-width: 700px; /* Keeps the width at 700px */
   }
@@ -168,9 +240,25 @@
     </style>
 </head>
 <body>
-    <div id="title"> Andrés </div>
-    <div id="title2"> Cabrero Rodríguez-Estecha</div>
-     <!-- <div id="subtitle">Portfolio</div> -->
+    <header>
+        <div id="index">
+            <ul class="horizontal-list">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#tools">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="content">
+       
+    <div id="main-title">
+        <div id="background-image"></div>    
+        <div id="title"> Andrés Cabrero Rodríguez-Estecha</div>
+        <div id="background-gradient"></div>
+    
+
+
 
     <p id="introduction"> Andrés is an interdisciplinary artist, award-winning game developer, and educator. He is researching and teaching at Det Kongelige Akademi in Copenhagen, while working freelance on /usually/ game related projects.</p>
 
@@ -188,14 +276,7 @@
         </ul>
     </div>-->
 
-    <div id="index">
-        <h2>Index</h2> <!-- Horizontal -->
-        <ul class="horizontal-list">
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#tools">Contact</a></li>
-        </ul>
-    </div>
+    
         
     <div id="projects">
     <h2 >Projects</h2>
@@ -241,9 +322,9 @@
     </div>
 
     <div id="tools">
-        <h2> <p style="text-align: center;">  Contact</h2>
-        <p style="text-align: center;">If you want to collaborate, have questions or just want to connect write me at </p>
-        <p style="text-align: center;">andres(at)hotmail(dot)com</p>
+        <h2>Contact</h2>
+        <p>If you want to collaborate, have questions or just want to connect write me at </p>
+        <p>andres(at)hotmail(dot)com</p>
     </div>
 
     <div id="tools">
@@ -254,7 +335,7 @@
         
         <p style="text-align: center;margin-top: 3%; font-size: 0.7em;">©Andres Cabrero Rodríguez-Estecha 2023</p>
     </div>
-
+   
     <!-- JavaScript to highlight active index item -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -283,6 +364,10 @@
             }
         });
     </script>
+        <!-- Add more content here -->
+    </div>
+    
+    
 
 </body>
 </html>
