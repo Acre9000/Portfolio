@@ -96,7 +96,7 @@
 
         #introduction {
             
-            
+
             font-size: 1.25em;
             text-align: left;
             max-width: 700px;
@@ -105,6 +105,9 @@
             font-family: "Lato", sans-serif;           
             font-weight: 400;
             font-style: normal;
+            margin-bottom: 10%;
+            transform: translate(0%, 10%); /* Centers the title precisely */
+
         }
 
         #index {
@@ -169,6 +172,8 @@
             font-family: "Lato", sans-serif;           
             font-weight: 400;
             font-style: normal;
+            margin-bottom: 0%;
+            transform: translate(0%, 90%); /* Centers the title precisely */
         }
 
         
@@ -256,57 +261,42 @@
         <div id="background-image"></div>    
         <div id="title"> Andrés Cabrero Rodríguez-Estecha</div>
         <div id="background-gradient"></div>
-    
-
-
-
-    <p id="introduction"> Andrés is an interdisciplinary artist, award-winning game developer, and educator. He is researching and teaching at Det Kongelige Akademi in Copenhagen, while working freelance on /usually/ game related projects.</p>
-
-    
-
-    <p id="introduction"> Andrés is the co-creator of <a href="Games.html" target="_blank">BORE DOME</a>, alongside Birgif and William Wagner. Together they formed Goblin Rage. </p>
-    
-    <p id="introduction" style="text-align: center;">  Here you can <a href="Documents/CV_Andres.pdf" target="_blank">view my CV</a>    </p>
-    
-
-    <!--<div id="index">
-        <h2>Index</h2> <!-- Vertical 
-        <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#tools">Contact</a></li>
-        </ul>
-    </div>-->
-
-    
         
-    <div id="projects">
-    <h2 >Projects</h2>
-    <div class="grid-container">
-        <div class="grid-item">
-            <a href="Games.html"> <!-- Link to HTML file for Project 1 -->
-                <img src="Images/BD01.png" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
-            </a>
-            <p class="image-title">Games</p>
-        </div>
-        <div class="grid-item">
-            <a href="Visdev.html"> <!-- Link to HTML file for Project 2 -->
-                <img src="Images/GerdaConcept/andres-cabrero-rodriguez-estecha-anna-shutsimple.jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
-            </a>
-            <p class="image-title">Visdev / Concept / Illustration</p>
-        </div>
-        <div class="grid-item">
-            <a href="Technical.html"> <!-- Link to HTML file for Project 3 -->
-                <img src="Images/VRexhibit/Exhibition Space FPS_1080p_20.11.2023_02-08-38-min.jpg" alt="Project 3" style="object-fit: cover; width: 100%; height: 100%;">
-            </a>
-            <p class="image-title">Technical</p>
-        </div>
-        <!-- Add more grid items as needed -->
-    </div>
-</div>
 
+    <div id="introduction">
+        <p id="introduction"> Andrés is an interdisciplinary artist, award-winning game developer, and educator. He is researching and teaching at Det Kongelige Akademi in Copenhagen, while working freelance on /usually/ game related projects.</p>
 
-<div id="experience"></div>    
+        <p id="introduction"> Andrés is the co-creator of <a href="Games.html" target="_blank">BORE DOME</a>, alongside Birgif and William Wagner. Together they formed Goblin Rage. </p>
+        
+        <p id="introduction" style="text-align: center;">  Here you can <a href="Documents/CV_Andres.pdf" target="_blank">view my CV</a>    </p>
+        
+        <div id="projects">
+            <h2 >Projects</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="Games.html"> <!-- Link to HTML file for Project 1 -->
+                        <img src="Images/BD01.png" alt="Project 1" style="object-fit: cover; width: 100%; height: 100%;">
+                    </a>
+                    <p class="image-title">Games</p>
+                </div>
+                <div class="grid-item">
+                    <a href="Visdev.html"> <!-- Link to HTML file for Project 2 -->
+                        <img src="Images/GerdaConcept/andres-cabrero-rodriguez-estecha-anna-shutsimple.jpg" alt="Project 2" style="object-fit: cover; width: 100%; height: 100%;">
+                    </a>
+                    <p class="image-title">Visdev / Concept / Illustration</p>
+                </div>
+                <div class="grid-item">
+                    <a href="Technical.html"> <!-- Link to HTML file for Project 3 -->
+                        <img src="Images/VRexhibit/Exhibition Space FPS_1080p_20.11.2023_02-08-38-min.jpg" alt="Project 3" style="object-fit: cover; width: 100%; height: 100%;">
+                    </a>
+                    <p class="image-title">Technical</p>
+                </div>
+                <!-- Add more grid items as needed -->
+            </div>
+
+       </div>
+
+       <div id="experience"></div>    
 <div id="introduction">
         <h2 style="margin-top: 100px;">Experience  </h2>
         <p>Maybe the most honest realization for me about working has been how thrilling is to learn something. The satisfaction of research, problem solving, and enabling oneself and others to create things.</p>
@@ -337,6 +327,24 @@
         <p style="text-align: center;margin-top: 3%; font-size: 0.7em;">©Andres Cabrero Rodríguez-Estecha 2023</p>
     </div>
    
+
+    
+    <!--<div id="index">
+        <h2>Index</h2> <!-- Vertical 
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#tools">Contact</a></li>
+        </ul>
+    </div>-->
+
+    
+        
+    
+</div>
+
+
+
     <!-- JavaScript to highlight active index item -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
